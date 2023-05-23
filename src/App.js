@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './style/App.css';
 import Routeur from './router/Routeur.js';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (

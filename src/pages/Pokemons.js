@@ -1,7 +1,18 @@
-const Pokemons=()=>{
-    return(
-        <p>page pokemons</p>
+import ElementListPokemon from '../components/ElementListPokemon'
+import pokemons from '../data/pokemons.js'
+
+const Pokemons = () => {
+    return (
+        <>
+            <h1>page pokemons</h1>
+
+            <div className='container mt-5'>
+                {pokemons.map((data, id) => {
+                    return <ElementListPokemon key={data.id} id={data.id} nom={data.nom} types={data.types} />
+                })}
+            </div>
+        </>
     )
 }
 
-export default Pokemons;
+export default Pokemons
