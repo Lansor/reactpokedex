@@ -4,14 +4,14 @@ const pokemon = [
       nom: "Bulbizarre",
       type: "Plante/Poison",
       stats: { pv: 45, atk: 49, def: 49, atkSpe: 65, defSpe: 65, vit: 45 },
-      image: "lien_vers_l'image_de_Bulbizarre"
+      image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
     },
     {
       id: 2,
       nom: "Herbizarre",
       type: "Plante/Poison",
       stats: { pv: 60, atk: 62, def: 63, atkSpe: 80, defSpe: 80, vit: 60 },
-      image: "lien_vers_l'image_d'Herbizarre"
+      image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
     },
     // Ajoute les autres Pokémon de la première génération ici
   ];
