@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import pokemons from '../data/pokemons'
 import Types from '../components/Types'
+import { Link } from 'react-router-dom'
 const Pokemon=()=>{
     
     const { id } = useParams()
@@ -10,6 +11,9 @@ const Pokemon=()=>{
     if (!pokemon) {
         return <h2>Pokemon non trouvé</h2>
     }
+    // const idSuivant = parseInt(id)+1;
+    // const pokemonSuivant = pokemons.find((p) => p.id.toString() === idSuivant.toString())
+   
 
     return(
         <>
@@ -79,8 +83,13 @@ const Pokemon=()=>{
             </tr>
             </tbody>
         </table>
+        {/* <Link to={`/pokemon/${pokemonSuivant.id}`}>
+        Pokemon Suivant
+    </Link> */}
+        
         </>
     )
+   
 }
 
 export default Pokemon
