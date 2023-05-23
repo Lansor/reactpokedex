@@ -13,15 +13,15 @@ const Pokemon=()=>{
     return(
         <>
         <h2>{pokemon.nom}</h2>
-        <img src={pokemon.image} alt={pokemon.nom} style={{ width: '200px', height: 'auto' }}/>
+        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} alt={pokemon.nom} style={{ width: '200px', height: 'auto' }}/>
         <table>
             <tbody>
             <tr>
                 <td>
-                    Type
+                    Types
                 </td>
                 <td>
-                    {pokemon.type}
+                    {pokemon.types}
                 </td>
             </tr>
             <tr>
@@ -34,10 +34,10 @@ const Pokemon=()=>{
             </tr>
             <tr>
                 <td>
-                    Atk
+                    Attaque
                 </td>
                 <td>
-                    {pokemon.stats.atk}
+                    {pokemon.stats.attaque}
                 </td>
             </tr>
             <tr>
@@ -45,12 +45,12 @@ const Pokemon=()=>{
                     Def
                 </td>
                 <td>
-                    {pokemon.stats.def}
+                    {pokemon.stats.defense}
                 </td>
             </tr>
             <tr>
                 <td>
-                    atkSpe
+                attaque spéciale
                 </td>
                 <td>
                     {pokemon.stats.atkSpe}
@@ -58,7 +58,7 @@ const Pokemon=()=>{
             </tr>
             <tr>
                 <td>
-                    defSpe
+                defense spéciale
                 </td>
                 <td>
                     {pokemon.stats.defSpe}
@@ -69,7 +69,7 @@ const Pokemon=()=>{
                     vitesse
                 </td>
                 <td>
-                    {pokemon.stats.vit}
+                    {pokemon.stats.vitesse}
                 </td>
             </tr>
             </tbody>
