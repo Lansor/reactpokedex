@@ -1,10 +1,11 @@
 import { useParams } from 'react-router-dom'
-import pokemons from '../components/data/pokemon'
+import pokemons from '../data/pokemons'
+import Types from '../components/Types'
 const Pokemon=()=>{
     
     const { id } = useParams()
 
-    const pokemon = pokemons.find((projet) => projet.id.toString() === id)
+    const pokemon = pokemons.find((p) => p.id.toString() === id)
 
     if (!pokemon) {
         return <h2>Pokemon non trouvé</h2>
@@ -21,7 +22,11 @@ const Pokemon=()=>{
                     Types
                 </td>
                 <td>
-                    {pokemon.types}
+                <div className='row'>
+                        {pokemon.types.map((data, id) => {
+                            return <Types key={id} type={data} />
+                        })}
+                    </div>
                 </td>
             </tr>
             <tr>
