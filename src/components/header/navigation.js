@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom'
 export default function Navigation() {
     return (
         <>
-            <nav className='navbar navbar-expand-lg bg-body-tertiary'>
+            <nav className='navbar navbar-expand-lg bg-body-tertiary bg-secondary w-100 ' style={{position: 'fixed'}}>
                 <div className='container-fluid'>
-                    <a className='navbar-brand' href='#'>
+                    <a className='navbar-brand' >
                         Pokedex
                     </a>
                     <button
