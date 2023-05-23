@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from '../components/layout/layout';
+import Pokemon from '../pages/Pokemon';
+import Pokemons from '../pages/Pokemons';
 
 const Routeur = () => {
     return ( 
@@ -6,8 +9,8 @@ const Routeur = () => {
             <Router>
                 <Layout>
                     <Routes>
-                        <Route path='/' element=<Pokemons />/>
-                        <Route path='/pokemon/:id' element=<Pokemon />/>
+                        <Route path='/' element={<Pokemons/>}/>
+                        <Route path='/pokemon/:id' element={<Pokemon/>}/>
                     </Routes>
                 </Layout>
             </Router>
